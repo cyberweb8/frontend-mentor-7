@@ -12,6 +12,16 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
     <title>Frontend Mentor | Profile card component</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -28,18 +38,23 @@
   <body>
     <main>
       <article class="card">
+        <div class="banner"></div>
         <div class="card__photo">
-          <img src="images/image-victor.jpg" alt="Victor Crest" />
+          <img
+            src="images/image-victor.jpg"
+            alt="Victor Crest"
+            class="card__img"
+          />
         </div>
         <div class="card__content">
-          <h1>Profile card component</h1>
-          <h2>
+          <h1 class="sr-only">Profile card component</h1>
+          <h2 class="name">
             Victor Crest
-            <span>26</span>
+            <span class="age">26</span>
           </h2>
-          <p>London</p>
+          <p class="city">London</p>
 
-          <ul>
+          <ul class="card__list">
             <li>
               <p>80K</p>
               <span>Followers</span>
